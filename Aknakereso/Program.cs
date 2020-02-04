@@ -11,6 +11,7 @@ namespace Aknakereso
         static void Main(string[] args)
         {
             Console.WriteLine("Hello GIT!");
+            Console.WriteLine("Hello again!");
             Console.ReadKey();
         }
     }
