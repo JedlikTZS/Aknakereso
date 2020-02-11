@@ -5,3 +5,10 @@ Z:\C#\aknagit\Aknakereso\Aknakereso\obj\Debug\Aknakereso.csprojAssemblyReference
 Z:\C#\aknagit\Aknakereso\Aknakereso\obj\Debug\Aknakereso.csproj.CoreCompileInputs.cache
 Z:\C#\aknagit\Aknakereso\Aknakereso\obj\Debug\Aknakereso.exe
 Z:\C#\aknagit\Aknakereso\Aknakereso\obj\Debug\Aknakereso.pdb
+Z:\C#\aknagit\Új mappa\Aknakereso\bin\Debug\Aknakereso.exe.config
+Z:\C#\aknagit\Új mappa\Aknakereso\bin\Debug\Aknakereso.exe
+Z:\C#\aknagit\Új mappa\Aknakereso\bin\Debug\Aknakereso.pdb
+Z:\C#\aknagit\Új mappa\Aknakereso\obj\Debug\Aknakereso.csprojAssemblyReference.cache
+Z:\C#\aknagit\Új mappa\Aknakereso\obj\Debug\Aknakereso.csproj.CoreCompileInputs.cache
+Z:\C#\aknagit\Új mappa\Aknakereso\obj\Debug\Aknakereso.exe
+Z:\C#\aknagit\Új mappa\Aknakereso\obj\Debug\Aknakereso.pdb

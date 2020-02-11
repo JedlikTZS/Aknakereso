@@ -8,7 +8,16 @@ namespace Aknakereso
 {
     class Program
     {
-
+        static void Main(string[] args)
+        {
+            char[,] pálya = new char[10, 10];
+            Feltöltés(pálya);
+            BombaSorsoló(pálya);
+            Kirajzoló(pálya, false);
+            Lépés(pálya, false);
+            BombaSzomszédSzám();
+            Console.ReadKey();
+        }
         static void Feltöltés(char[,] pálya)
         {
             for (int i = 0; i < pálya.GetLength(0); i++)
@@ -18,18 +27,6 @@ namespace Aknakereso
                     pálya[i, j] = '_';
                 }
             }
-        }
-
-        static void Main(string[] args)
-        {
-            char[,] pálya = new char[10, 10];
-            Feltöltés(pálya);
-            Console.WriteLine("Add meg a bombák számát: ");
-            int bombaSzám = int.Parse(Console.ReadLine());
-            BombaSorsoló(pálya, bombaSzám);
-            Kirajzoló(pálya, false);
-            Lépés(pálya, false);
-            Console.ReadKey();
         }
 
         static void Lépés(char[,] pálya, bool legyenBomba)
@@ -60,8 +57,10 @@ namespace Aknakereso
 
         }
 
-        static void BombaSorsoló(char[,] pálya, int bombaSzám)
+        static void BombaSorsoló(char[,] pálya)
         {
+            Console.WriteLine("Add meg a bombák számát: ");
+            int bombaSzám = int.Parse(Console.ReadLine());
             Random rnd = new Random();
             int sor, oszlop;
             for (int i = 0; i < bombaSzám; i++)
@@ -81,15 +80,14 @@ namespace Aknakereso
             {
                 for (int j = 0; j < pálya.GetLength(1); j++)
                 {
-                    if (legyenBomba)
+                    if (pálya[i, j] == 'X')
                     {
-                        Console.Write(pálya[i, j]);
+                        Console.Write('X');
                     }
-                    else if (pálya[i, j] != 'X')
+                    if (pálya[i, j] != 'X')
                     {
                         Console.Write('_');
                     }
-
                     Console.Write('|');
                 }
                 Console.WriteLine();
